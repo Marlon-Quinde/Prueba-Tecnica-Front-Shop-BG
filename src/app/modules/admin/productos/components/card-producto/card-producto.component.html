@@ -1,0 +1,33 @@
+
+<div class="shadow-2xl h-[300px] flex flex-col bg-white rounded-3xl">
+  <div class="px-6 py-8 sm:p-10 sm:pb-6">
+    <div class="grid items-center justify-center w-full grid-cols-1 text-left">
+      <div>
+        <h2
+          class="text-sm font-medium tracking-tighter truncate text-gray-600"
+        >
+        {{producto.nombre}}
+        </h2>
+        <p class="mt-2 text-sm text-gray-500">{{producto.nombre_Categoria}}</p>
+      </div>
+      <div class="mt-6">
+        <p>
+          <span class="text-5xl font-light tracking-tight text-black">
+            ${{producto.precio}}
+          </span>
+          <span class="text-base font-medium text-gray-500"> </span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="flex px-6 pb-8 sm:px-8">
+    <a
+      aria-describedby="tier-company"
+      class="flex items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
+      href="#"
+      (click)="agregarFavorito()"
+    >
+      Agrega favorito
+    </a>
+  </div>
+</div>
