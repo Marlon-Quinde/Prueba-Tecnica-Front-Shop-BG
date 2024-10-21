@@ -9,12 +9,12 @@ import { ListadoProducto } from '../interfaces/listadoProducto.interface';
 })
 export class ProductoService {
 
-  private baseUrl: string = Environments.baseUrl
+  private _baseUrl: string = Environments.baseUrl
   constructor(private _http: HttpClient) { }
 
 
   getProducts(){
-    const url = `${this.baseUrl}/productos/listado-producto`
+    const url = `${this._baseUrl}/productos/listado-producto`
     return this._http.get<ResponseBack<ListadoProducto[]>>(url)
   }
 }
